@@ -1,13 +1,17 @@
-#divNav{
-    background-color:rgb(79, 79, 79);
-    width: 100%;
-    position: absolute;
+#Fixnav{
+    background-color:rgb(79, 79, 79); 
+    position: fixed;
+    padding-top: 100px;
 }
 #navbarNav{
     padding-left:30%;
+    background-color: rgb(79, 79, 79);
+}
+#logoImg{
+    width: 100px;
+    height: 100px;
 }
 .nav-item{
-    
     padding-right: 12px;
     color: white;
 }
@@ -15,19 +19,21 @@ body{
     background-color:rgb(79, 79, 79);
 }
 b:hover{
-    color:#FFB9B9;
+    color: #FFB9B9;
+    background-color: rgb(79, 79, 79);
 }
 #myPic{
     height:35vw;
     width: 20vw;
     border: dashed 6px #FFB9B9;
     margin-left: 10%;  
+    margin-top: 130px;
 }
 #textDiv{
     position: relative;
     float: right;
     padding-right:25vw ;
-    padding-top:10vw ;
+    padding-top:150px ;
 }
 h1{
     text-align: start;
@@ -49,24 +55,18 @@ b,p{
     font-weight: bold;
     position: absolute;
     right: 25vw;
-    bottom: -5vw;
-}
-#qouts{
-    position: absolute;
-    right: 25vw;
-    bottom: -3vw;
-    color: white;
+    bottom: -9vw;
 }
 .container{
-    margin-top: 4vw;
+    margin-top: 2vw;
     background-color: #FFB9B9;
-    height: 2vw;
+    height: 3vw;
     border-radius: 15px;
     
 }
 .SecTitle{
     color: rgb(79, 79, 79);
-    font-size: 20px;
+    font-size: 27px;
     text-align: center;
     font-weight: bolder;
     margin-bottom: 5vw;}
@@ -97,8 +97,8 @@ b,p{
 }
 #eduImg{
     margin: 5vw  12vw;
-    height:18vw;
-    width:16vw;
+    height:16vw;
+    width:14vw;
     border: solid 4px #FFB9B9;
 }
 .eduText{
@@ -118,29 +118,14 @@ h4{
     color: #FFB9B9;
     font-family: 'Brush Script MT', cursive;
 }
-#sociaEdu1{
-    position: absolute;
-    left:25vw;
-}
-#sociaEdu2{
-    position: absolute;
-    left:22vw;
-}
-.sociaEdu:hover{
-       font-size:x-large;
-       color: white;
-}
-.sociaEdu{
-    color: #FFB9B9;
-    font-size:40px;
-}
+
 .Experience{
     position: relative;
 }
 #ExpImg{
     margin: 5vw  8vw;
-    height:20vw;
-    width:23vw;
+    height:17vw;
+    width:22vw;
     border: solid 4px #FFB9B9;
 }
 .ExpText{
@@ -148,11 +133,6 @@ h4{
     top:6vw;
     display: inline-block;
 }
-#sociaEdu3{
-    position: absolute;
-    left:50vw;
-}
-
 .ProjectName{
     font-size: larger;
     color: white;
@@ -161,26 +141,44 @@ h4{
 .Certificates{
     display: grid;
     grid-template-columns: auto auto auto auto;
-    column-gap: 2vw;
+    column-gap: 6vw;
     justify-content: center;
-    margin-top:2vw;
-    margin-bottom: 2vw;
+    margin-top:8vw;
+    margin-bottom: 8vw;
 }
 .References{
     display: grid;
-    grid-template-columns: auto auto auto auto;
-    column-gap: 2vw;
+    grid-template-columns: auto auto auto ;
+    column-gap: 8vw;
     justify-content: center;
-    margin-top:2vw;
-    margin-bottom: 2vw;
+    margin: 8vw auto;
+
 }
-.CertificatesImage , .ReferencesImage{
+.RefIcon{
+    color: rgb(79, 79, 79);
+    font-size:27px;
+    float: right;
+    margin-right: 34px;
+    margin-top: -22px;
+}
+.CertificatesImage{
     height: 150px;
     width: 200px;
     border-radius: 15px;
 }
-.CertificatesItems , .ReferencesItems{
-    height: 220px;
+.ReferencesImage{
+    height: 193px;
+    width: 305px;
+    border-radius: 15px;
+}
+.CertificatesItems {
+    height: 205px;
+    border:solid 5px #FFB9B9;
+    border-radius: 15px;
+    background-color: #FFB9B9;
+}
+.ReferencesItems{
+    height: 305px;
     border:solid 5px #FFB9B9;
     border-radius: 15px;
     background-color: #FFB9B9;
@@ -189,27 +187,28 @@ h4{
     display: grid;
     grid-template-columns: auto auto;
     grid-row: 10px;
-    justify-content: center;
-    margin-top: 15px;
+    justify-content:space-around;
+    margin-top: 8vw;
+    margin-bottom: 8vw;
 }
 .SkillsItems{
-    width:170px;
-    background-color: #FFB9B9;
     text-align: center;
+    width: 450px;
+    background-color: #FFB9B9;
     border-radius: 15px;
-    margin-top: 20px;
-    margin-right: 20px;
 }
+ul{
+    list-style-type:none;
+}
+
 .checked {
     color: #FFB9B9;
   }
 .language{
-    margin-top: 15px;
-    margin-left: 300px;
+    margin: 8vw 10vw;
     display: grid;
     grid-template-columns: auto auto;
-    justify-content: stretch;
-    margin-bottom: 15px;
+    justify-content: space-around;
   }
 
 #footer{
@@ -226,6 +225,25 @@ a{
 .itemFooter{
     margin-top: 2vw;
 }
+#footIcon2{
+    color: rgb(84, 84, 157);
+    font-size:40px;
+    border:solid 3px;
+     border-radius: 10px;
+}
+#footIcon1{
+    color: rgb(13, 13, 58);
+    font-size:40px;
+    border:solid 3px;
+    border-radius: 10px;
+}
+#footIcon3{
+    color: white;
+    font-size:40px;
+    border:solid 3px; 
+    border-radius: 10px;
+}
+
 @media only screen and (min-device-width:481px)and (max-device-width:768px){
     
     h1{
@@ -248,7 +266,7 @@ a{
     }
     #textDiv{
         padding-right:30vw ;
-        padding-top:5vw ;
+        padding-top:22vw ;
     }
     #myPic{
         height:30vw;
@@ -295,10 +313,31 @@ a{
     li , ul{
         font-size: xx-small;
     }
-    #container{
+    .container{
         height: 3vw;
         
-        
+    }
+    .language{
+        margin-left: 50px;
+    }
+    #logoImg{
+        width: 80px;
+        height: 70px;
+    }
+    .SkillsItems{
+        width: 272px;;
+    }
+    .ReferencesImage {
+        height: 98px;
+        width: 187px;}
+    #footIcon1{
+        font-size:20px;  
+    }
+    #footIcon2{
+        font-size:20px;  
+    }
+    #footIcon3{
+        font-size:20px;  
     }
 }
 @media only screen and (min-device-width:0)and (max-device-width:480px){
@@ -349,8 +388,8 @@ a{
         font-size: 12px;
         font-weight: bold;
     } 
-    #container{
-        height: 5vw;
+    .container{
+        height: 6vw; width:280px ;
     }
     #ObjItem , .projectsText{
         width: 64%;
@@ -375,7 +414,7 @@ a{
         height: 100px;
     }
     .Education{
-        height: 200px;
+        height: 158px;
     }
     .Experience{
         height: 120px;
@@ -386,6 +425,35 @@ a{
     .Skills{
         grid-template-columns: auto;
         
+    }
+    .language{
+        margin-left: 10PX;
+    }
+    #logoImg{
+        width: 70px;
+        height: 60px;
+    }
+    .SkillsItems{
+        width: 130px;
+        margin-bottom: 10px;
+    }
+    #ExpImg{
+        height:21vw;
+        width:24vw;
+    }
+    #footIcon1{
+        font-size:20px;  
+    }
+    #footIcon2{
+        font-size:20px;  
+    }
+    #footIcon3{
+        font-size:20px;  
+    }
+    .ReferencesImage{
+        height: 193px;
+        width: 305px;
+        border-radius: 15px;
     }
 
 }

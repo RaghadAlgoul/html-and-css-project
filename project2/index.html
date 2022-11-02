@@ -6,18 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap-5.2.2-dist/bootstrap-5.2.2-dist/css/bootstrap.css">
     <link rel="stylesheet" href="index.css">
-    <title>index</title>
+    <title>portfolio</title>
     <script src="https://kit.fontawesome.com/7cb3feaf29.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <!-------------------------------------------------navbar section-------------------------------------------------->
     
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid" id="Fixnav">
            <a class="navbar-brand" href="#">
             
-            <img src="logo.png" alt="Logo" width="100" height="80" class="d-inline-block align-text-top"></a>
+            <img src="logo.png" id="logoImg" alt="Logo" width="100" height="80" class="d-inline-block align-text-top"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -58,7 +58,12 @@
         <h1>RAGHAD BILAL ALGHOUL</h1>
         <h4 style="color: #FFB9B9;">Full Stack Web Developer</h4>
         <br>
-        <h5 id="qouts">"وَأَن لَّيْسَ لِلإنسَانِ إلاَّ مَا سَعَى" </h5>
+        <div>
+          <h5 style="color: white ;position: absolute;right: 25vw;bottom: -2vw;"> :قال تعالى</h5>
+          <h5 style="color: white ;position: absolute;right: 25vw;bottom:-5vw;">"وَأَن لَّيْسَ لِلإنسَانِ إلاَّ مَا سَعَى" </h5>
+          <!--<p style="color: white ;position: absolute;right: 39vw;bottom:-6vw;"> صدق الله العظيم</p>-->
+        </div>
+        
         <a ID="idBottom" href="CV-pic.png" target="_blank" download >Dawnload CV</a>
       </div>
     <div class="container">
@@ -74,15 +79,14 @@
         <p class="SecTitle" id="Education">Education</p>
     </div>
     <div class="Education">
-        <img id="eduImg" src="جامعة-اليرموك.jpg" alt="yarmouk university pic">
+        <a href="https://www.yu.edu.jo/index.php/en" target="_blank"><img id="eduImg" src="جامعة-اليرموك.jpg" alt="yarmouk university pic"></a>
         <DIV class="eduText">
         <h2>YARMOUK UNIVERSITY</h2>
         <h3>Computer Science </h3>
         <h4>2018-2022</h4>
-        <p> - Holds a BA in Computer Science from Yarmouk University .</p>
+        <p> - Holds a BCS in Computer Science from Yarmouk University .</p>
         <p> - I graduated with a very good grade( GPA 80.1 ) .</p>
-        <a class="sociaEdu" id="sociaEdu1" href="https://www.facebook.com/profile.php?id=100064291585797" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-        <a class="sociaEdu" id="sociaEdu2" href="https://twitter.com/yarmoukuni" target="_blank"><i class="fa-brands fa-twitter"></i></a></div>
+        </div>
     </div>
         
     </div>
@@ -90,13 +94,12 @@
         <p class="SecTitle" id="Experience">Experience</p>
     </div>
     <div class="Experience">
-        <img id="ExpImg" src="ac.jpeg" alt="Orange Academy">
+        <a href="https://yo.orange.jo/orange-coding-academy" target="_blank"><img id="ExpImg" src="ac.jpeg" alt="Orange Academy"></a>
         <DIV class="ExpText">
         <h2>Coding Academy by Orange</h2>
         <h5>Full Stack Web Development Trainee</h5>
         <br>
         <p>- I am now a trainee with Orange Company in intensive training  on  Full Stack Web Development field .</p>
-        <a class="sociaEdu" id="sociaEdu3" href="https://www.facebook.com/CodingAcademybyOrange" target="_blank"><i class="fa-brands fa-facebook"></i></a>
         </DIV>
         
     </div>
@@ -122,16 +125,16 @@
     </div>
     <div class="Certificates">
             <div class="CertificatesItems">
-                <img src="Asp.net.png" class="CertificatesImage">
-                <h2  style=" color:rgb(79, 79, 79);text-align: center;">ASP.NET</h2>
+                <img src="Asp.net.jpeg" class="CertificatesImage">
+                <h2  style=" color:rgb(79, 79, 79);text-align: center;padding-top: 3px;">ASP.NET</h2>
             </div>
             <div class="CertificatesItems">
                 <img src="python.png" class="CertificatesImage">
                 <h2  style=" color:rgb(79, 79, 79);text-align: center;">pYTHON</h2>
             </div>
             <div class="CertificatesItems">
-                <img src="HTML.png" class="CertificatesImage">
-                <h2  style=" color:rgb(79, 79, 79);text-align: center;">HTML</h2>
+                <img src="enjaz.jpeg" class="CertificatesImage">
+                <h2  style=" color:rgb(79, 79, 79);text-align: center;">Enjaz</h2>
             </div>  
             <div class="CertificatesItems">
                 <img src="HTML.png" class="CertificatesImage">
@@ -145,14 +148,20 @@
         <div class="ReferencesItems">
             <img src="Hala1.jpeg" class="ReferencesImage">
             <h2  style=" color:rgb(79, 79, 79);text-align: center;">Hala Hamdan</h2>
+            <p style="text-align: center;">full stack web development trainer</p>
+            <a href="https://www.linkedin.com/in/hala-hamdan-927941163/" class="RefIcon" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
         </div>
         <div class="ReferencesItems">
             <img src="alaa.jpeg" class="ReferencesImage">
             <h2  style=" color:rgb(79, 79, 79);text-align: center;">Ala'a Qazaq</h2>
+            <p style="text-align: center;">Lead traniner for Full-stack web</p>
+            <a href="https://www.linkedin.com/feed/?trk=msn-top-arae" class="RefIcon"><i class="fa-brands fa-linkedin"></i></a>
         </div>
-        <div class="CertificatesItems">
+        <div class="ReferencesItems">
             <img src="Hala2.jpeg" class="ReferencesImage">
             <h2  style=" color:rgb(79, 79, 79);text-align: center;">Hala Obaidat</h2>
+            <p style="text-align:center ;"> Job Coach at Orange Academy </p>
+            <a href="https://www.linkedin.com/feed/?trk=msn-top-arae" class="RefIcon"><i class="fa-brands fa-linkedin"></i></a>
         </div>
         
     </div>
@@ -161,14 +170,14 @@
     </div>
     <div class="Skills">
         <div class="SkillsItems">
-            <h3 style="color: rgb(79, 79, 79);">Soft Skills</h3>
-            <ul><li style="color:white;">Time Management</li><li style="color:white;">Work Hard</li><li style="color:white;"> Critical Thinking</li></ul>
+            <h3 style="color: rgb(79, 79, 79); margin-top: 15px;">Soft Skills</h3>
+            <ul  ><li style="color:white;"><p>Time Management</p></li><li style="color:white;"><p>Work Hard</p></li><li style="color:white;"><p> Critical Thinking</p></li></ul>
         </div>
         <div class="SkillsItems">
-            <h3 style="color: rgb(79, 79, 79);">Tech. Skills</h3>
-            <ul><li style="color:white;">pYTHON</li><li style="color:white;">C#</li><li style="color:white;">HTML</li></ul>
+            <h3 style="color: rgb(79, 79, 79);margin-top: 15px;">Tech. Skills</h3>
+            <ul><li style="color:white;"><p>pYTHON</p></li><li style="color:white;"><p>C#</p></li><li style="color:white;"><p>HTML</p></li></ul>
         </div>
-        </div>>
+        </div>
         <div class="container">
             <p class="SecTitle" id="Language">Language</p>
         </div>
@@ -195,15 +204,15 @@
     <div id="footer">
         <div class="itemFooter" >
           <h4>Contact</h4>
-          <p> Email&nbsp;&nbsp;&nbsp;: &nbsp;&nbsp;&nbsp; raghadalgoul97@gmail.com</p>
-          <p>Phone Num.&nbsp;&nbsp;&nbsp;: &nbsp;&nbsp;&nbsp;0778096872</p>
-          <p>Location&nbsp;&nbsp;&nbsp;: &nbsp;&nbsp;&nbsp;Bayt Ra'as Irbid , Jordan</p></div>
+          <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><p>raghadalgoul97@gmail.com</p></a>
+          <a href="tel:0778096872"><p>0778096872</p></a>
+          <p>Bayt Ra'as Irbid , Jordan</p></div>
         <div class="itemFooter" >
-          <h4>social media</h4>
-          <a href="https://github.com/RaghadAlgoul?tab=repositories" style="color: rgb(13, 13, 58);font-size:40px;"><i class="fa-brands fa-github"></i></a>
-          <a href="https://www.linkedin.com/feed/?trk=msn-top-arae" style="color: rgb(84, 84, 157);font-size:40px;"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="https://twitter.com/RaghadBilal?t=EaE52F10mYsuE_VFrgLBWQ&s=09" style="color: white;font-size:40px;"><i class="fa-brands fa-twitter"></i></a></div>
-        <img  class="itemFooter"src="logo.png" alt="Logo" width="110" height="90">
-      </div>
+          <h4 style="margin-bottom: 20px;">social media</h4>
+          <a href="https://github.com/RaghadAlgoul?tab=repositories"target="_blank"id="footIcon1" ><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/feed/?trk=msn-top-arae"target="_blank" id="footIcon2" ><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://twitter.com/RaghadBilal?t=EaE52F10mYsuE_VFrgLBWQ&s=09" target="_blank"id="footIcon3"><i class="fa-brands fa-twitter"></i></a></div>
+        <div><img  class="itemFooter"src="logo.png" alt="Logo" width="110" height="90"><br><p>© 2022 Irbid Jordan, Inc.All rights reserved</p>
+      </div></div>
       
       
